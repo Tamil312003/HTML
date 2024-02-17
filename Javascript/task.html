@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salem</title>
+</head>
+<body>
+    <p onclick="task()"><strong>Salem District</strong> is one of the <i>important district</i> of Tamil Nadu state in southern India.Salem District is one of the <del onclick="task()">38 districts</del> of Tamil Nadu state in southern India. The district is now divided into<q onclick="task()"> Dharmapuri, Krishnagiri, Namakkal</q> as individual districts. Salem is the district headquarters and other major towns in the district include Mettur, Thammampatti, Attur, Omalur, Sangagiri and Edappadi. is now divided into Dharmapuri, Krishnagiri, Namakkal as individual districts. Salem is the district headquarters and other major towns in the district include <ins>Mettur, Thammampatti, Attur, Omalur, Sangagiri and Edappadi</ins>.</p>
+    <script>
+        function task()
+        {
+            var salem=document.getElementsByTagName('q')[0];
+           salem.style.backgroundColor="red";
+           let s=document.getElementsByTagName('del')[0];
+           s.style.backgroundColor="yellow";
+        }
+        function table(){
+            var A=document.getElementById('a');
+            A.style.color="pink";
+            var B=document.getElementById('b');
+            B.style.color="green";
+        }
+        
+
+    </script>
+    
+    <table cellpadding="8" cellspacing="5" onclick="table()">
+        <tbody >
+            <tr id="b">
+            <th id="a">serial no</th>
+            <th>one</th>
+            <th>two</th>
+            <th>three</th>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
